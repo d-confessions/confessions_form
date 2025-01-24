@@ -6,14 +6,18 @@
   <body>
     <h1>Derwent Confessions 2024/2025</h1>
     <form id = "my_form">
-      <input type="text" id = "text">Input your confession here.</input>
+      <input type="text" id = "confText">Input your confession here.</input>
       <input type="submit" id = "submit_button">Submit</input>
     </form>
   </body>
   <script>
-    const form = document.getElementById("my_form")
+    const form = document.getElementById("my_form");
     form.addEventListener('submit', function(event) {
+      const confession = form.elements.confText.value;
+      event.preventDefault();
+      
      });
+    
     
   </script>
 </html>
